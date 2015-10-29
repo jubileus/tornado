@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/style.css')}}">
+    <title>用户信息详情页</title>
+</head>
+<body>
+    <div style="width: 100%;">
+        <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+            ID
+        </div>
+        <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+            {{ info['data']['id'] }}
+        </div>
+        <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+            用户姓名
+        </div>
+        <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+            {{ info['data']['name'] }}
+        </div>
+        <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+            年龄
+        </div>
+        <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+            {{ info['data']['age'] }}
+        </div>
+    </div>
+</body>
+</html>

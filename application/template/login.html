@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/style.css')}}">
+    <title>登陆页</title>
+</head>
+<body>
+    <div style="width: 100%;">
+        <form action="/login" method="post">
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                用户名：
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                <input type="text" name="username" />
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                密码：
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                <input type="password" name="password" />
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                提交
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                <input type="submit">
+            </div>
+        </>
+    </div>
+</body>
+</html>
