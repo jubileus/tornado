@@ -7,18 +7,32 @@
 </head>
 <body>
     <div style="width: 100%;">
-        <form action="/login" method="post">
-            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
-                用户名：
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div style="float:left;width: 99%;border: #00ff7f solid 1px;">
+                文件上传：
             </div>
             <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
-                <input type="text" name="username" />
+                文件：
             </div>
             <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
-                密码：
+                <input type="file" name="file" />
             </div>
             <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
-                <input type="password" name="password" />
+                提交
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                <input type="submit">
+            </div>
+        </form>
+        <form action="/download" method="post">
+            <div style="float:left;width: 99%;border: #00ff7f solid 1px;">
+                文件下载：
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                文件名称：
+            </div>
+            <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
+                <input type="text" name="filename" />
             </div>
             <div style="float:left;width: 49%;border: #00ff7f solid 1px;">
                 提交
